@@ -1,4 +1,4 @@
-# ERMEC Calculator
+# ERMEC Calculator - ENDO Riven Mod Endo Calculator
 
 ## Description
 ERMEC is a calculator that estimates the amount of Endo you can gain from a Riven mod based on its rank and the number of rerolls it has.
