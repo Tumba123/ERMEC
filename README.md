@@ -12,11 +12,9 @@ ERMEC is a calculator that estimates the amount of Endo you can gain from a Rive
 ## Installation
 You do not need to download or install anything to use ERMEC, simply visit the website to use the calculator.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
-This project was created by [Your Name] as a personal project.
+This project was created by me as a personal project.
 
 ## Contact
-If you have any questions or concerns, please contact [Your Name] at [your email address].
+If you have any questions or concerns, please contact me at TheRareGamer#8006.
