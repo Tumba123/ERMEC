@@ -1,0 +1,133 @@
+body {
+	background-color: #1b1e23;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+	margin-top: 50px;
+}
+
+form {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+	background-color: #2b2e36;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px #000;
+}
+
+label {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+input[type="number"],
+input[type="text"] {
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 5px;
+	border: none;
+	width: 80%;
+	margin-bottom: 20px;
+	background-color: #292b32;
+	color: #fff;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+	outline: none;
+	box-shadow: 0px 0px 5px #fff;
+}
+
+img {
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 24px;
+	border-radius: 5px;
+	border: none;
+	background-color: #0072c6;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: #005ea3;
+}
+
+#endoGained {
+	background-color: #292b32;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	width: 80%;
+	display: inline-block;
+}
+
+#endoImg {
+	width: 40px;
+	height: auto;
+}
+
+#rerolls {
+	background-color: #292b32;
+	color: #fff;
+	font-size: 24px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	width: 80%;
+	display: inline-block;
+}
+
+#rerollsImg {
+	width: 50px;
+	height: auto;
+}
+
+#masterRankImg {
+	width: 50px;
+	height: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+#masterRankImg:hover {
+	transform: scale(2);
+}
+
+#rivenRankError {
+	color: #e74c3c;
+	display: none;
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+input:focus + #masterRankImg {
+	transform: scale(2);
+}
+
+#RivenModRankImg {
+	width: 50px;
+	height: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+#RivenModRankImg:hover {
+	transform: scale(2);
+}
+
+input:focus + #RivenModRankImg {
+	transform: scale(1.1);
+}
