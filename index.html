@@ -26,15 +26,17 @@
 		<input type="number" placeholder="Input the ammount of re-rolls" id="rerolls" name="rerolls" min="0" required oninput="validateInput()">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Refresh_icon.svg/1200px-Refresh_icon.svg.png" alt="Rerolls" id="rerollsImg">
 		<q id="rerollsError" style="color: red; display: none;">Error: Value under 0!</q><br><br>
-		
 
-
-
-		<button type="button" onclick="calculateEndo()">Calculate Endo</button>
-		<button type="button" alt="resetbtn" id="resetbtn" onclick="resetForm()">Reset</button><br><br>
 		<label for="endoGained">Endo Gained:</label>
 		<input type="text" id="endoGained" name="endoGained" readonly placeholder="Press 'Calculate Endo' to get the value">
         <img src="https://static.wikia.nocookie.net/warframe/images/b/bd/Endo.png" alt="endoGained" id="rerollsImg"><br><br>
+		
+		<label for="endoGained">Aproximate Platinum worth:</label>
+		<input type="text" id="platWorth" name="platWorth" readonly placeholder="Press 'Calculate Endo' to get the value">
+        <img src="https://static.wikia.nocookie.net/warframe/images/e/e7/PlatinumLarge.png" alt="endoGained" id="rerollsImg"><br><br>
+
+		<button type="button" onclick="calculateEndo()" >Calculate Endo</button>
+		<button type="button" alt="resetbtn" id="resetbtn" onclick="resetForm()">Reset</button><br><br>
 
 	</form>
 </body>
