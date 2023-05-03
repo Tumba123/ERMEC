@@ -26,25 +26,31 @@ function validateInput() {
     }
   }
   
-function calculateEndo() {
-  const rivenMasteryRank = parseInt(document.getElementById('rivenMR').value);
-  const rivenRank = parseInt(document.getElementById('modRank').value);
-  const rerolls = parseInt(document.getElementById('rerolls').value);
-
-  if (isNaN(rivenMasteryRank) || isNaN(rivenRank) || isNaN(rerolls)) {
-    alert('Please enter valid values for all fields.');
-    return;
+  function calculateEndo() {
+    const rivenMasteryRank = parseInt(document.getElementById('rivenMR').value);
+    const rivenRank = parseInt(document.getElementById('modRank').value);
+    const rerolls = parseInt(document.getElementById('rerolls').value);
+  
+    if (isNaN(rivenMasteryRank) || isNaN(rivenRank) || isNaN(rerolls)) {
+      alert('Please enter valid values for all fields.');
+      return;
+    }
+  
+    const endoGained = Math.floor(
+      100 * (rivenMasteryRank - 8) +
+        22.5 * Math.pow(2, rivenRank) +
+        200 * rerolls -
+        7
+    );
+  
+    const platWorth = Math.floor(endoGained / 333);
+  
+    document.getElementById('endoGained').value = endoGained;
+    document.getElementById('platWorth').value = platWorth;
   }
 
-  const endoGained = Math.floor(
-    100 * (rivenMasteryRank - 8) +
-      22.5 * Math.pow(2, rivenRank) +
-      200 * rerolls -
-      7
-  );
-
   document.getElementById('endoGained').value = endoGained;
-}
+  
 function resetForm() {
     document.getElementById("rivenMR").value = "";
     document.getElementById("modRank").value = "";
@@ -54,3 +60,5 @@ function resetForm() {
     document.getElementById("rivenRankError").style.display = "none";
     document.getElementById("rerollsError").style.display = "none";
   }
+
+  
