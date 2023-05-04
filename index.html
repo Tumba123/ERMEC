@@ -14,12 +14,10 @@
 		<q id="rivenMRError" style="color: red; display: none;">Error: Mastery Rank must be at least 8</q><br><br>
 
 
-
 		<label for="modRank">Riven Mod Rank:</label>
 		<input type="number" placeholder="Input riven mod rank 0-8" id="modRank" name="modRank" min="0" max="8" required oninput="validateInput()">
 		<img src="https://static.wikia.nocookie.net/warframe/images/b/b3/RivenVeiledMod.png" alt="rrRank" id="RivenModRankImg">
 		<q id="rivenRankError" style="color: red; display: none;">Error: Mod Rank too high!</q><br><br>
-
 
 
 		<label for="rerolls">Number of Rerolls:</label>
@@ -34,6 +32,10 @@
 		<label for="endoGained">Aproximate Platinum worth:</label>
 		<input type="text" id="platWorth" name="platWorth" readonly placeholder="Press 'Calculate Endo' to get the value">
         <img src="https://static.wikia.nocookie.net/warframe/images/e/e7/PlatinumLarge.png" alt="endoGained" id="rerollsImg"><br><br>
+		
+		<label for="warframeMarketUrl">Warframe.market URL:</label>
+		<input type="text" id="warframeMarketUrl" name="warframeMarketUrl" placeholder="Enter the URL of the warframe.market page" required>
+		<button type="button" onclick="autofillFromWarframeMarket()">Autofill</button>
 
 		<button type="button" onclick="calculateEndo()" >Calculate Endo</button>
 		<button type="button" alt="resetbtn" id="resetbtn" onclick="resetForm()">Reset</button><br><br>
