@@ -1,13 +1,22 @@
-name: Custom Event Workflow
+name: Warframe Market API Scraper
 
 on:
-  repository_dispatch:
-    types: [custom-event]
+  push:
+    branches: [ main ]
 
 jobs:
-  custom-job:
+  scrape_api:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run API Scraper
-        run: python api_scraper.py
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Scrape Warframe Market API
+        env:
+          AUCTION_URL: ${{ secrets.AUCTION_URL }}
+        run: python scrape_api.py
