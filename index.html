@@ -8,53 +8,16 @@
 <body>
 	<h1>Riven Mod Endo Calculator</h1>
 <form>
-		<label for="modRank">New RMEC 2.0 app with Warframe Market Autofill!</label>
-<button onclick="location.href='https://github.com/Tumba123/RMEC/releases/tag/RMEC-v2.0'" type="button">Download here!</button>
+		<label for="modRank">🙋‍♂ RMEC 3.0 available as webapp!
+  </label>
+      <p>Nothing much has changed apart from the looks and the fact that you dont need to use the electron app anymore.</p>
+<button onclick="location.href='https://rmec.codeprobe.xyz'" type="button">Access here!</button>
 <p>
 
 </p>
 <label for="modRank">Endo Hunter Tool for WF 33.5.X</label>
+  <p>Work in progress to turn it into a web-app!</p>
 <button onclick="location.href='https://github.com/Tumba123/RMEC/releases/tag/v.1.01'" type="button">Download here!</button>
 </form>
-<p>
-
-</p>
-
-
-<form>
-		<label for="rivenMR">Riven Mastery Rank:</label>
-		<input type="number" id="rivenMR" name="rivenMR" placeholder="Input riven mastery rank 8-16" min="8" oninput="validateInput()">
-		<img src="https://static.wikia.nocookie.net/warframe/images/a/ae/MasteryAffinity64.png/" alt="rivenMRImg" id="masterRankImg">
-		<q id="rivenMRError" style="color: red; display: none;">Error: Mastery Rank must be at least 8</q><br><br>
-
-
-		<label for="modRank">Riven Mod Rank:</label>
-		<input type="number" placeholder="Input riven mod rank 0-8" id="modRank" name="modRank" min="0" max="8" required oninput="validateInput()">
-		<img src="https://static.wikia.nocookie.net/warframe/images/c/c0/IconLegendary.png" alt="rrRank" id="RivenModRankImg">
-		<q id="rivenRankError" style="color: red; display: none;">Error: Mod Rank too high!</q><br><br>
-
-
-		<label for="rerolls">Number of Rerolls:</label>
-		<input type="number" placeholder="Input the amount of re-rolls" id="rerolls" name="rerolls" min="0" required oninput="validateInput()">
-		<img src="https://static.wikia.nocookie.net/warframe/images/7/75/IconReset.png" alt="Rerolls" id="rerollsImg">
-		<q id="rerollsError" style="color: red; display: none;">Error: Value under 0!</q><br><br>
-
-		<label for="endoGained">Endo Gained:</label>
-		<input type="text" id="endoGained" name="endoGained" readonly placeholder="Press 'Calculate Endo' to get the value">
-		<img src="https://static.wikia.nocookie.net/warframe/images/b/bd/Endo.png" alt="endoGained" id="endoImg"><br><br>
-		
-		<label for="endoGained">Approximate Platinum worth:</label>
-		<input type="text" id="platWorth" name="platWorth" readonly placeholder="Press 'Calculate Endo' to get the value">
-		<img src="https://static.wikia.nocookie.net/warframe/images/e/e7/PlatinumLarge.png" alt="endoGained" id="endoImg">
-		<label for="platinumRate">Endo to Platinum rate:</label>
-   		<input type="number" id="platinumRate" name="platinumRate" value="333" onchange="calculateEndo()"><br><br>
-		
-		<button type="button" onclick="calculateEndo()">Calculate Endo</button>
-		<button type="button" alt="resetbtn" id="resetbtn" onclick="resetForm()">Reset</button><br><br>
-
-
-	</form>
-
-
 </body>
 </html>
